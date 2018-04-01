@@ -6,54 +6,66 @@
     tools:context="com.example.marissagift.NyimasMarissa_1202154354_Modul6.CommentPostActivity">
 
     <LinearLayout
-        android:padding="8dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="8dp">
 
         <TextView
             android:id="@+id/tv_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center" />
+
         <ImageView
             android:id="@+id/post_img"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
             android:layout_gravity="center"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginTop="8dp" />
+
         <TextView
             android:id="@+id/tv_title_post"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginTop="8dp" />
+
         <TextView
             android:id="@+id/tv_post"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="8dp"/>
-        <EditText
-            android:id="@+id/et_comment"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:hint="Comment"/>
-        <Button
-            android:onClick="addComment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@color/colorAccent"
-            android:textColor="#fff"
-            android:text="Comment"/>
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_comment"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Comment" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:onClick="addComment"
+                android:text="Comment"
+                android:textColor="#fff" />
+        </LinearLayout>
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_comment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginTop="8dp" />
 
     </LinearLayout>
 </ScrollView>
